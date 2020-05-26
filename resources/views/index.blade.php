@@ -19,12 +19,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 text">
-                    <h1>Manage your financials <br>in just a click!</h1>
-<<<<<<< Updated upstream
-                    <p>Automate your income and expenses today.</p>
-=======
+                    <h1>Manage your financials <br>in just a click.</h1>
                     <p>Automate your income and expenses right now!</p>
->>>>>>> Stashed changes
                     <button class="btn btn-outline-success member" type="button">become a member</button>
                 </div>
                 <div class="col-lg-5 img"><img class="laptop" src="/img/asset.png" alt="laptop"></div>
