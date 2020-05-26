@@ -1,0 +1,398 @@
+html,
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    height: 695px;
+    background-color: #f9faff;
+    background-image: url("/img/bg.png");
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+img.laptop {
+    width: 100%;
+}
+
+.text {
+    align-self: center;
+}
+
+.img {
+    align-self: center;
+}
+.text h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 61px;
+    text-transform: capitalize;
+
+    color: #343383;
+}
+
+.text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #c6c5e4;
+}
+
+button.btn.btn-outline-success.member {
+    border: 2px solid #343383;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 12px 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #343383;
+}
+
+.btn-outline-success.member:hover {
+    color: white !important;
+    background-color: #343383 !important;
+    border-color: #343383 !important;
+}
+
+/* About Section */
+
+.about-sec {
+    height: 595px;
+    background-color: #f9faff;
+    background-image: url("/img/bg2.png");
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+img.savings {
+    width: 100%;
+}
+
+.img {
+    align-self: center;
+}
+
+.about {
+    align-self: center;
+}
+
+.about h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #c6c5e4;
+}
+
+.about h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+
+    color: #343383;
+}
+
+p.caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #504ee0;
+}
+
+p.sub {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: rgba(80, 78, 224, 0.4);
+}
+
+/* Feature Section */
+
+.feature-sec {
+    height: 495px;
+    background-color: #f9faff;
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-12 {
+    text-align: center;
+    align-content: center;
+}
+
+.feature {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.feature h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    color: #c6c5e4;
+}
+
+.feature h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+
+    color: #343383;
+}
+
+.feature p.caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(80, 78, 224, 0.4);
+}
+
+.row.card-row {
+    justify-content: center;
+}
+
+.card {
+    background-color: transparent !important;
+    border: 0px !important;
+    text-align: center !important;
+    padding: 1rem;
+}
+
+span.feature-icon {
+    font-size: 5rem;
+    --fa-primary-color: #504ee0;
+    --fa-secondary-color: #504ee0;
+    --fa-secondary-color-opacity: 40%;
+}
+
+.card-title h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #504ee0;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(80, 78, 224, 0.4);
+}
+
+/* User Section */
+
+.user-sec {
+    height: 495px;
+    background: linear-gradient(115.92deg, #4d4ba2 0%, #6c63ff 100%);
+    display: flex;
+    align-items: center;
+}
+
+.user h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    color: white;
+}
+
+.col-lg-12 {
+    text-align: center;
+    align-content: center;
+}
+
+.user {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.user h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+
+    color: white;
+}
+
+.user p.caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: white;
+}
+
+.row.card-row {
+    justify-content: center;
+}
+
+#user-card {
+    background: #f9faff !important;
+    border: 0px !important;
+    text-align: center !important;
+    padding: 1rem;
+    height: 237px;
+    box-shadow: 0px 0px 12px rgba(155, 166, 234, 0.5);
+}
+
+span.user-icon {
+    font-size: 5rem;
+    --fa-primary-color: #504ee0;
+    --fa-secondary-color: #504ee0;
+    --fa-secondary-color-opacity: 40%;
+}
+
+.card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #504ee0;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: rgba(80, 78, 224, 0.4);
+}
+
+/*Team Section*/
+
+.team-sec {
+    height: 495px;
+    background-color: #f9faff;
+    display: flex;
+    align-items: center;
+}
+
+.col-lg-12 {
+    text-align: center;
+    align-content: center;
+}
+
+.team {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.team h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    color: #c6c5e4;
+}
+
+.team h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+
+    color: #343383;
+}
+
+.team p.caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: rgba(80, 78, 224, 0.4);
+}
+
+span.previous {
+    font-size: 3rem;
+    --fa-primary-color: #504ee0;
+    --fa-secondary-color: #504ee0;
+    --fa-secondary-color-opacity: 40%;
+}
+
+span.next {
+    font-size: 3rem;
+    --fa-primary-color: #504ee0;
+    --fa-secondary-color: #504ee0;
+    --fa-secondary-color-opacity: 40%;
+}

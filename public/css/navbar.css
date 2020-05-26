@@ -1,0 +1,37 @@
+.fixed-top {
+    position: absolute !important;
+}
+
+a.navbar-brand.logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #504ee0;
+}
+
+button.btn.btn-outline-success.sign-in {
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 100px;
+    padding: 12px 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.btn-outline-success.sign-in:hover {
+    color: #504ee0 !important;
+    background-color: white !important;
+    border-color: white !important;
+}
