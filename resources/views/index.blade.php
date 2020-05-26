@@ -21,7 +21,7 @@
                 <div class="col-lg-7 text">
                     <h1>Manage your financials <br>in just a click!</h1>
                     <p>Automate your income and expenses today.</p>
-                    <button class="btn btn-outline-success member" type="button">become a member</button>
+                    <a class="btn btn-outline-success" id="signup-btn" href="signup" type="button">become a member</a>
                 </div>
                 <div class="col-lg-5 img"><img class="laptop" src="/img/asset.png" alt="laptop"></div>
             </div>

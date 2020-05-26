@@ -51,7 +51,7 @@ img.laptop {
     color: #c6c5e4;
 }
 
-button.btn.btn-outline-success.member {
+a#signup-btn {
     border: 2px solid #343383;
     box-sizing: border-box;
     border-radius: 100px;
@@ -66,15 +66,34 @@ button.btn.btn-outline-success.member {
 
     text-transform: uppercase;
 
-    color: #343383;
+    background-color: #343383;
+    color: #f9faff;
 }
 
-.btn-outline-success.member:hover {
-    color: white !important;
-    background-color: #343383 !important;
+a#signup-btn:hover {
+    color: #343383 !important;
+    background-color: #f9faff !important;
     border-color: #343383 !important;
 }
 
+a#signup-btn:not(:disabled):not(.disabled):active,
+a#signup-btn:not(:disabled):not(.disabled).active,
+.show > a#signup-btn.dropdown-toggle {
+    color: #343383 !important;
+    background-color: #f9faff !important;
+    border-color: #343383 !important;
+}
+
+a#signup-btn:focus,
+#signup-btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 51, 131, 0.5);
+}
+
+a#signup-btn:not(:disabled):not(.disabled):active:focus,
+a#signup-btn:not(:disabled):not(.disabled).active:focus,
+.show > a#signup-btn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 51, 131, 0.5);
+}
 /* About Section */
 
 .about-sec {
