@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="selectType" class="col-sm-3">Type</label>
+                                    <label for="selectType" class="col-sm-3 col-form-label">Type</label>
                                     <div class="col-sm-9">
                                         <select class="form-control" name="selectType" id="selectType">
                                             <option value="none" selected disabled hidden>Select Type</option>
