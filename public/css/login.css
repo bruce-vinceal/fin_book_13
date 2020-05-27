@@ -45,7 +45,7 @@ button#login-btn.focus {
     color: #f9faff;
     background-color: #9291cd !important;
     border-color: #9291cd !important;
-    box-shadow: 0 0 0 0.2rem rgba(146, 145, 205, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(146, 145, 205, 0.5) !important;
 }
 
 .login-container h1 {

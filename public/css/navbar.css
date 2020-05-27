@@ -46,5 +46,5 @@ a#signin-btn:not(:disabled):not(.disabled).active,
 
 a#signin-btn:focus,
 a#signin-btn.focus {
-    box-shadow: 0 0 0 0.2rem rgba(249, 250, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(249, 250, 255, 0.5) !important;
 }
