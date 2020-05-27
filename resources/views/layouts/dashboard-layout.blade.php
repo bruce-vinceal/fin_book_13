@@ -12,6 +12,7 @@
         <link href="/css/category-management.css" rel="stylesheet">
         <link href="/css/monthly-report.css" rel="stylesheet">
         <link href="/css/ledger.css" rel="stylesheet">
+        <link href="/css/Chart.css" rel="stylesheet">
         <link href="/css/dashboard-layout.css" rel="stylesheet">
         <link href="/css/datatables.css" rel="stylesheet">
     </head>
@@ -31,6 +32,7 @@
         <script src="/js/popper.js"></script>
         <script src="/js/bootstrap/bootstrap.js"></script>
         <script src="/js/datatables.js"></script>
+        <script src="/js/Chart.bundle.js"></script>
         <script>
             $(document).ready(function () {
                 $("#sidebarToggle, #sidebarToggleTop").on("click", function (e) {
