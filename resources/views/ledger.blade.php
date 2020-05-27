@@ -24,7 +24,7 @@
                     <form>
                         <div class="modal-body">
                                 <div class="form-group row">
-                                    <label for="selectCategory" class="col-sm-3">Category</label>
+                                    <label for="selectCategory" class="col-sm-3 col-form-label">Category</label>
                                     <div class="col-sm-9">
                                         <select class="form-control" name="selectCategory" id="selectCategory">
                                             <option value="none" selected disabled hidden>Select Category</option>
