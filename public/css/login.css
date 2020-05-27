@@ -15,7 +15,7 @@
     color: #343383;
 }
 
-button.btn.btn-lg.btn-primary.btn-block {
+button#login-btn {
     border: 2px solid #343383;
     box-sizing: border-box;
     border-radius: 100px;
@@ -34,10 +34,18 @@ button.btn.btn-lg.btn-primary.btn-block {
     background-color: #343383 !important;
 }
 
-button.btn.btn-lg.btn-primary.btn-block:active {
+button#login-btn:active {
     color: white !important;
     background-color: #9291cd !important;
     border-color: #9291cd !important;
+}
+
+button#login-btn:focus,
+button#login-btn.focus {
+    color: #fff;
+    background-color: #9291cd !important;
+    border-color: #9291cd !important;
+    box-shadow: 0 0 0 0.2rem rgba(146, 145, 205, 0.5);
 }
 
 .login-container h1 {
