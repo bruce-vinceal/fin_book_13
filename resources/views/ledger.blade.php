@@ -8,7 +8,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Ledger</h1>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AddEntryModal"><i class="fas fa-plus fa-sm text-white-50"></i> Add Entry
+        <button type="button" class="btn btn-primary" id="add-entry-btn" data-toggle="modal" data-target="#AddEntryModal"><i class="fas fa-plus fa-sm text-white-50"></i> Add Entry
         </button>
 
         <!-- Modal -->
@@ -24,31 +24,31 @@
                     <form>
                         <div class="modal-body">
                                 <div class="form-group row">
-                                    <label for="selectEntryType" class="col-sm-3">Category</label>
+                                    <label for="selectCategory" class="col-sm-3">Category</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control" id="selectEntryType">
+                                        <select class="form-control" name="selectCategory" id="selectCategory">
                                             <option value="none" selected disabled hidden>Select Category</option>
-                                            <option>Transportation</option>
-                                            <option>Allowance</option>
+                                            <option value="Transportation">Transportation</option>
+                                            <option value="Allowance">Allowance</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEntryDescription" class="col-sm-3 col-form-label">Description</label>
                                     <div class="col-sm-9">
-                                        <input type="description" class="form-control" id="inputEntryDescription" placeholder="i.e Transportation">
+                                        <input type="description" class="form-control" name="inputEntryDescription" id="inputEntryDescription" placeholder="i.e Transportation">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputAmount" class="col-sm-3 col-form-label">Amount</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="inputAmount" placeholder="000">
+                                        <input type="text" class="form-control" name="inputAmount" id="inputAmount" placeholder="000">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputDate" class="col-sm-3 col-form-label">Date</label>
                                     <div class="col-sm-9">
-                                        <input type="date" class="form-control" id="inputDate">
+                                        <input type="date" class="form-control" name="inputDate" id="inputDate">
                                     </div>
                                 </div>
                         </div>
@@ -66,22 +66,22 @@
             <table class="table" id="ledger-table">
                 <thead class="">
                     <tr>
-                    <th class="column1">Date</th>
-                    <th class="column2">Description</th>
-                    <th class="column3">Category</th>
-                    <th class="column4">Amount</th>
-                    <th class="column5"></th>
+                    <th class="column1" name="th-date" id="th-date">Date</th>
+                    <th class="column2" name="th-entry-description" id="th-entry-description">Description</th>
+                    <th class="column3" name="th-entry-category" id="th-entry-category">Category</th>
+                    <th class="column4" name="th-amount" id="th-amount">Amount</th>
+                    <th class="column5" name="th-delete" id="th-delete"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="column1">05/26/20</td>
-                        <td class="column2">Fair to School</td>
-                        <td class="column3">Transportation</td>
-                        <td class="column4">(20)</td>
-                        <td class="column5">
+                        <td class="column1" name="entry-date" id="entry-date">05/26/20</td>
+                        <td class="column2" name="entry-description" id="entry-description">Fair to School</td>
+                        <td class="column3" name="entry-category" id="entry-category">Transportation</td>
+                        <td class="column4" name="entry-amount" id="entry-amount">(20)</td>
+                        <td class="column5" name="entry-delete" id="entry-delete">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteEntryModal">
+                            <button type="button" class="btn btn-sm btn-outline-danger" id="delete-entry-btn" data-toggle="modal" data-target="#deleteEntryModal">
                             Delete
                             </button>
 
@@ -99,7 +99,7 @@
                                     Are you sure to delete this entry?
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                                     <button type="button" class="btn btn-danger">Delete</button>
                                 </div>
                                 </div>

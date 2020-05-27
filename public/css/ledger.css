@@ -1,55 +1,32 @@
-.btn-primary {
-    color: #fff;
+button#add-entry-btn {
+    color: #f9faff !important;
     background-color: #504ee0 !important;
     border-color: #504ee0 !important;
 }
 
-.btn-primary:hover {
-    color: #fff;
+button#add-entry-btn:hover {
+    color: #f9faff !important;
     background-color: #343383 !important;
     border-color: #343383 !important;
 }
 
-.btn-primary:focus,
-.btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
-}
-
-.btn-primary.disabled,
-.btn-primary:disabled {
-    color: #fff;
-    background-color: #4e73df !important;
-    border-color: #4e73df !important;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #504ee0 !important;
-    border-color: #504ee0 !important;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-    color: #fff;
+button#add-entry-btn:not(:disabled):not(.disabled):active,
+button#add-entry-btn:not(:disabled):not(.disabled).active,
+.show > button#add-entry-btn.dropdown-toggle {
+    color: #f9faff !important;
     background-color: #343383 !important;
     border-color: #343383 !important;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5);
+button#add-entry-btn:not(:disabled):not(.disabled):active:focus,
+button#add-entry-btn:not(:disabled):not(.disabled).active:focus,
+.show > button#add-entry-btn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 51, 131, 0.5) !important;
 }
 
-.btn-primary:focus,
-.btn-primary.focus {
-    color: #fff;
-    background-color: #343383 !important;
-    border-color: #343383 !important;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+button#add-entry-btn:focus,
+button#add-entry-btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5) !important;
 }
 
 .container-fluid {
