@@ -12,22 +12,15 @@
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="home">
-          <i class="fas fa-fw fa-dice-d6"></i>
-          <span>Dashboard</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
       <!-- Nav Item - Monthly -->
       <li class="nav-item">
         <a class="nav-link" href="monthly-report">
           <i class="fas fa-fw fa-chart-pie-alt"></i>
           <span>Monthly Report</span></a>
       </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
 
       <!-- Nav Item - Category Management -->
       <li class="nav-item">
