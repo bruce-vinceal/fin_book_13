@@ -1,11 +1,4 @@
     <nav class="navbar fixed-top navbar-expand-lg justify-content-between px-5 py-4">
-        <a class="navbar-brand logo" href="#">Finote.</a>
-        <button class="btn btn-outline-success sign-in" type="button">sign in</button>
+        <a class="navbar-brand logo" href="index">Finote.</a>
+        <a class="btn btn-outline-success" id="signin-btn" href="login" role="button">sign in</a>
     </nav>
-
-
-
-
-
-
-    

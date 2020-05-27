@@ -12,8 +12,8 @@ a.navbar-brand.logo {
     color: #504ee0;
 }
 
-button.btn.btn-outline-success.sign-in {
-    border: 2px solid white;
+a#signin-btn {
+    border: 2px solid #f9faff;
     box-sizing: border-box;
     border-radius: 100px;
     padding: 12px 35px;
@@ -27,11 +27,24 @@ button.btn.btn-outline-success.sign-in {
 
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: #f9faff;
 }
 
-.btn-outline-success.sign-in:hover {
+a#signin-btn:hover {
     color: #504ee0 !important;
-    background-color: white !important;
-    border-color: white !important;
+    background-color: #f9faff !important;
+    border-color: #f9faff !important;
+}
+
+a#signin-btn:not(:disabled):not(.disabled):active,
+a#signin-btn:not(:disabled):not(.disabled).active,
+.show > a#signin-btn.dropdown-toggle {
+    color: #504ee0 !important;
+    background-color: #f9faff !important;
+    border-color: #f9faff !important;
+}
+
+a#signin-btn:focus,
+a#signin-btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(249, 250, 255, 0.5);
 }
