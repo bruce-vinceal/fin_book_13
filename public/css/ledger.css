@@ -52,40 +52,6 @@
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-span.sidebarIcon {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-span.sidebarIcon:hover {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.sidebar #sidebarToggle {
-    -moz-transition: all 0.1s linear;
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-}
-.sidebar #sidebarToggle:hover {
-    text-decoration: none;
-}
-
-.sidebar #sidebarToggle:focus {
-    outline: none;
-}
-
-.sidebar.toggled {
-    width: 0 !important;
-    overflow: hidden;
-}
-
-.sidebar.toggled #sidebarToggle {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
 .container-fluid {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;

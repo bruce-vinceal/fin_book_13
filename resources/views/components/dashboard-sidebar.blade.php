@@ -13,8 +13,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item">
+        <a class="nav-link" href="home">
           <i class="fas fa-fw fa-dice-d6"></i>
           <span>Dashboard</span></a>
       </li>
@@ -24,21 +24,21 @@
 
       <!-- Nav Item - Monthly -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="monthly-report">
           <i class="fas fa-fw fa-chart-pie-alt"></i>
           <span>Monthly Report</span></a>
       </li>
 
       <!-- Nav Item - Category Management -->
       <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="category-management">
           <i class="fas fa-fw fa-layer-group"></i>
           <span>Category Management</span></a>
       </li>
 
       <!-- Nav Item - Ledger -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="ledger">
           <i class="fas fa-fw fa-table"></i>
           <span>Ledger</span></a>
       </li>
