@@ -30,19 +30,19 @@ button#login-btn {
 
     text-transform: uppercase;
 
-    color: white;
+    color: #f9faff;
     background-color: #343383 !important;
 }
 
 button#login-btn:active {
-    color: white !important;
+    color: #f9faff !important;
     background-color: #9291cd !important;
     border-color: #9291cd !important;
 }
 
 button#login-btn:focus,
 button#login-btn.focus {
-    color: #fff;
+    color: #f9faff;
     background-color: #9291cd !important;
     border-color: #9291cd !important;
     box-shadow: 0 0 0 0.2rem rgba(146, 145, 205, 0.5);

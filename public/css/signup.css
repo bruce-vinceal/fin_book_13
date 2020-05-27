@@ -25,7 +25,7 @@
     color: #343383;
 }
 
-button.btn.btn-lg.btn-primary.btn-block {
+button#register-btn {
     border: 2px solid #343383;
     box-sizing: border-box;
     border-radius: 100px;
@@ -40,15 +40,24 @@ button.btn.btn-lg.btn-primary.btn-block {
 
     text-transform: uppercase;
 
-    color: white;
+    color: #f9faff;
     background-color: #343383 !important;
 }
 
-button.btn.btn-lg.btn-primary.btn-block:active {
-    color: white !important;
+button#register-btn:active {
+    color: #f9faff !important;
     background-color: #9291cd !important;
     border-color: #9291cd !important;
 }
+
+button#register-btn:focus,
+button#register-btn.focus {
+    color: #f9faff;
+    background-color: #9291cd !important;
+    border-color: #9291cd !important;
+    box-shadow: 0 0 0 0.2rem rgba(146, 145, 205, 0.5);
+}
+
 .form-signup p {
     font-family: Roboto;
     font-style: normal;
