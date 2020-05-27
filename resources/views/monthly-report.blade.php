@@ -8,7 +8,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Monthly Report</h1>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#GenerateReportModal"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report
+        <button type="button" class="btn btn-primary" id="generate-report-btn" data-toggle="modal" data-target="#GenerateReportModal"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report
         </button>
 
         <!-- Modal -->
@@ -24,28 +24,29 @@
                     <form>
                         <div class="modal-body">
                                 <div class="form-group row">
-                                    <label for="selectEntryType" class="col-sm-3">Month</label>
+                                    <label for="selectMonth" class="col-sm-3 col-form-label">Month</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control" id="selectEntryType">
+                                        <select class="form-control" name="selectMonth" id="selectMonth">
                                             <option value="none" selected disabled hidden>Select Month</option>
-                                            <option>January</option>
-                                            <option>February</option>
-                                            <option>March</option>
-                                            <option>April</option>
-                                            <option>May</option>
-                                            <option>June</option>
-                                            <option>July</option>
-                                            <option>August</option>
-                                            <option>September</option>
-                                            <option>October</option>
-                                            <option>November</option>
-                                            <option>December</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
                                         </select>
                                     </div>
                                 </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Generate</button>
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" id="generate-btn" class="btn btn-primary">Generate</button>
                         </div>
                     </form>
                 </div>

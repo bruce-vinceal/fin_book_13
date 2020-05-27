@@ -10,6 +10,7 @@
         <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/css/all.css" rel="stylesheet">
         <link href="/css/category-management.css" rel="stylesheet">
+        <link href="/css/monthly-report.css" rel="stylesheet">
         <link href="/css/ledger.css" rel="stylesheet">
         <link href="/css/dashboard-layout.css" rel="stylesheet">
         <link href="/css/datatables.css" rel="stylesheet">
