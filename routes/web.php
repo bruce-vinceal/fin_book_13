@@ -16,23 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/finote', 'GeneralController@index');
 
 Route::get('/login', 'LoginController@show');
+Route::post('/login', 'LoginController@authenticate');
 
 Route::get('/signup', 'RegisterController@show');
-
 Route::post('/signup', 'RegisterController@store');
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/finote/category', 'CategoryController@show');
 
-Route::get('/category-management', function () {
-    return view('category-management');
-});
+Route::get('finote/ledger', 'LedgerController@show');
 
-Route::get('/ledger', function () {
-    return view('ledger');
-});
-
-Route::get('/monthly-report', function () {
-    return view('monthly-report');
-});
+Route::get('/finote/monthly-report', 'ReportController@show');

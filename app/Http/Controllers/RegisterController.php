@@ -35,7 +35,7 @@ class RegisterController extends Controller
 
       $acc->save();
 
-      return view('login');
+      return redirect('/login');
     }
     else{
       return redirect('/finote');
