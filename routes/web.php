@@ -19,6 +19,8 @@ Route::get('/login', 'LoginController@show');
 
 Route::get('/signup', 'RegisterController@show');
 
+Route::post('/signup', 'RegisterController@store');
+
 Route::get('/home', function () {
     return view('home');
 });
