@@ -22,7 +22,10 @@ Route::get('/signup', 'RegisterController@show');
 Route::post('/signup', 'RegisterController@store');
 
 Route::get('/finote/category', 'CategoryController@show');
+Route::get('/finote/category/{id}', 'GeneralController@categoryManagement');
 
 Route::get('finote/ledger', 'LedgerController@show');
+Route::get('/finote/ledger/{id}', 'GeneralController@ledger');
 
 Route::get('/finote/monthly-report', 'ReportController@show');
+Route::get('/finote/monthly-report/{id}', 'GeneralController@monthlyReport');

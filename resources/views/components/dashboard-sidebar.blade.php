@@ -14,7 +14,7 @@
 
       <!-- Nav Item - Monthly -->
       <li class="nav-item">
-        <a class="nav-link" href="monthly-report">
+        <a class="nav-link" href="/finote/monthly-report/ {{ $user->id }}">
           <i class="fas fa-fw fa-chart-pie-alt"></i>
           <span>Monthly Report</span></a>
       </li>
@@ -24,14 +24,14 @@
 
       <!-- Nav Item - Category Management -->
       <li class="nav-item">
-        <a class="nav-link" href="category-management">
+        <a class="nav-link" href="/finote/category/ {{ $user->id }}">
           <i class="fas fa-fw fa-layer-group"></i>
           <span>Category Management</span></a>
       </li>
 
       <!-- Nav Item - Ledger -->
       <li class="nav-item">
-        <a class="nav-link" href="ledger">
+        <a class="nav-link" href="/finote/ledger/ {{ $user->id }}">
           <i class="fas fa-fw fa-table"></i>
           <span>Ledger</span></a>
       </li>
