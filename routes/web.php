@@ -22,6 +22,9 @@ Route::get('/signup', 'RegisterController@show');
 Route::post('/signup', 'RegisterController@store');
 
 Route::get('/finote/category', 'CategoryController@show');
+Route::post('/finote/category/{id}', 'CategoryController@store');
+Route::patch('/finote/category/{id}/{category}', 'CategoryController@update');
+Route::get('/finote/category/{id}/{category}', 'CategoryController@destroy');
 Route::get('/finote/category/{id}', 'GeneralController@categoryManagement');
 
 Route::get('finote/ledger', 'LedgerController@show');
