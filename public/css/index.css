@@ -6,26 +6,18 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 695px;
     background-color: #f9faff;
     background-image: url("/img/bg.png");
     background-size: contain;
     background-position: top right;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+    padding-top: 205px;
+    padding-bottom: 205px;
 }
 img.laptop {
     width: 100%;
 }
 
-.text {
-    align-self: center;
-}
-
-.img {
-    align-self: center;
-}
 .text h1 {
     font-family: Roboto;
     font-style: normal;
@@ -48,7 +40,7 @@ img.laptop {
 
     text-transform: capitalize;
 
-    color: #c6c5e4;
+    color: rgba(52, 51, 131, 0.5);
 }
 
 a#signup-btn {
@@ -97,26 +89,17 @@ a#signup-btn:not(:disabled):not(.disabled).active:focus,
 /* About Section */
 
 .about-sec {
-    height: 595px;
     background-color: #f9faff;
     background-image: url("/img/bg2.png");
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
+    padding-top: 106.2px;
+    padding-bottom: 106.2px;
 }
 
 img.savings {
     width: 100%;
-}
-
-.img {
-    align-self: center;
-}
-
-.about {
-    align-self: center;
 }
 
 .about h6 {
@@ -128,7 +111,7 @@ img.savings {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
-    color: #c6c5e4;
+    color: #504ee0;
 }
 
 .about h2 {
@@ -149,7 +132,7 @@ p.caption {
     font-size: 24px;
     line-height: 28px;
 
-    color: #504ee0;
+    color: rgba(52, 51, 131, 0.8);
 }
 
 p.sub {
@@ -159,21 +142,15 @@ p.sub {
     font-size: 18px;
     line-height: 21px;
 
-    color: rgba(80, 78, 224, 0.4);
+    color: rgba(52, 51, 131, 0.5);
 }
 
 /* Feature Section */
 
 .feature-sec {
-    height: 495px;
     background-color: #f9faff;
-    display: flex;
-    align-items: center;
-}
-
-.col-lg-12 {
-    text-align: center;
-    align-content: center;
+    padding-top: 88px;
+    padding-bottom: 88px;
 }
 
 .feature {
@@ -190,7 +167,7 @@ p.sub {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
-    color: #c6c5e4;
+    color: #504ee0;
 }
 
 .feature h2 {
@@ -209,13 +186,9 @@ p.sub {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 150%;
 
-    color: rgba(80, 78, 224, 0.4);
-}
-
-.row.card-row {
-    justify-content: center;
+    color: rgba(52, 51, 131, 0.5);
 }
 
 .card {
@@ -252,16 +225,15 @@ span.feature-icon {
     font-size: 16px;
     line-height: 19px;
 
-    color: rgba(80, 78, 224, 0.4);
+    color: rgba(80, 78, 224, 0.5) !important;
 }
 
 /* User Section */
 
 .user-sec {
-    height: 495px;
     background: linear-gradient(115.92deg, #4d4ba2 0%, #6c63ff 100%);
-    display: flex;
-    align-items: center;
+    padding-top: 100.5px;
+    padding-bottom: 100.5px;
 }
 
 .user h6 {
@@ -273,12 +245,7 @@ span.feature-icon {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
-    color: white;
-}
-
-.col-lg-12 {
-    text-align: center;
-    align-content: center;
+    color: rgba(249, 250, 255, 0.5);
 }
 
 .user {
@@ -294,7 +261,7 @@ span.feature-icon {
     line-height: 42px;
     text-transform: capitalize;
 
-    color: white;
+    color: #f9faff;
 }
 
 .user p.caption {
@@ -302,13 +269,9 @@ span.feature-icon {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 150%;
 
-    color: white;
-}
-
-.row.card-row {
-    justify-content: center;
+    color: rgba(249, 250, 255, 0.8);
 }
 
 #user-card {
@@ -318,6 +281,7 @@ span.feature-icon {
     padding: 1rem;
     height: 237px;
     box-shadow: 0px 0px 12px rgba(155, 166, 234, 0.5);
+    border-radius: 10px;
 }
 
 span.user-icon {
@@ -344,29 +308,29 @@ span.user-icon {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 14px;
+    line-height: 150%;
 
-    color: rgba(80, 78, 224, 0.4);
+    color: rgba(52, 51, 131, 0.5);
 }
 
 /*Team Section*/
 
 .team-sec {
-    height: 495px;
     background-color: #f9faff;
-    display: flex;
-    align-items: center;
-}
-
-.col-lg-12 {
-    text-align: center;
-    align-content: center;
+    padding-top: 107.5px;
+    padding-bottom: 107.5px;
 }
 
 .team {
     margin: 0 auto;
     max-width: 600px;
+}
+
+.team-body {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 236px;
 }
 
 .team h6 {
@@ -378,7 +342,7 @@ span.user-icon {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
-    color: #c6c5e4;
+    color: #504ee0;
 }
 
 .team h2 {
@@ -397,9 +361,42 @@ span.user-icon {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 150%;
 
-    color: rgba(80, 78, 224, 0.4);
+    color: rgba(52, 51, 131, 0.5);
+}
+
+p.team-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #343383;
+}
+
+h6.team-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    color: #343383;
+}
+
+h6.team-pos {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+    color: rgba(52, 51, 131, 0.5);
 }
 
 span.previous {
@@ -414,4 +411,104 @@ span.next {
     --fa-primary-color: #504ee0;
     --fa-secondary-color: #504ee0;
     --fa-secondary-color-opacity: 40%;
+}
+
+/* Contact Section */
+
+.contact-sec {
+    background-color: #f9faff;
+    padding-top: 84.5px;
+    padding-bottom: 84.5px;
+}
+
+.contact {
+    margin: 0 auto !important;
+    max-width: 800px !important;
+    border: 2px solid #504ee0;
+    background-color: #504ee0;
+    padding: 3rem 5rem;
+    border-radius: 10px;
+}
+
+.contact h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    color: rgba(249, 250, 255, 0.5);
+}
+
+.contact h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: capitalize;
+
+    color: #f9faff;
+}
+
+.contact p.caption {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: rgba(249, 250, 255, 0.8);
+}
+
+#contact-form {
+    text-align: left !important;
+}
+
+#contact-form label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #f9faff;
+}
+
+#contact-btn {
+    font-family: Roboto;
+    font-style: normal;
+    background-color: transparent !important;
+    border-color: #f9faff !important;
+    color: #f9faff !important;
+}
+
+#contact-btn:hover {
+    background-color: #f9faff !important;
+    border-color: #f9faff !important;
+    color: #504ee0 !important;
+}
+
+#contact-btn:focus,
+#contact-btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(249, 250, 255, 0.5);
+}
+
+/* Footer */
+footer.sticky-footer {
+    padding: 1.5rem 3rem;
+    flex-shrink: 0;
+}
+
+span.footer-copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #504ee0;
 }
