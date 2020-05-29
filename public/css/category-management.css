@@ -117,3 +117,7 @@ button#update-btn.focus {
 .table-striped > tbody > tr:nth-child(even) > th {
     background-color: rgba(80, 78, 224, 0.05);
 } */
+
+.card-header {
+    background-color: #f9faff;
+}

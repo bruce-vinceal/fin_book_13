@@ -3,7 +3,7 @@
 @section('content')
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <div class="card">
+    <div class="card shadow">
         <div class="card-header">
                     <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between">

@@ -33,3 +33,7 @@ button#add-entry-btn.focus {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.card-header {
+    background-color: #f9faff;
+}
