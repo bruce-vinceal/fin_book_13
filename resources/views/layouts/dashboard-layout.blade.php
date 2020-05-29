@@ -12,6 +12,7 @@
         <link href="/css/category-management.css" rel="stylesheet">
         <link href="/css/monthly-report.css" rel="stylesheet">
         <link href="/css/ledger.css" rel="stylesheet">
+        <link href="/css/footer.css" rel="stylesheet">
         <link href="/css/dashboard-layout.css" rel="stylesheet">
         <link href="/css/datatables.css" rel="stylesheet">
         <link href="/css/Chart.css" rel="stylesheet">
@@ -24,6 +25,7 @@
                     @include('components.dashboard-nav')
                     @yield('content')
                 </div>
+                @include('components.footer')
             </div>
         </div>
         @include('components.dashboard-logout-modal')

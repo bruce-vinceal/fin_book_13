@@ -1,0 +1,16 @@
+/* Footer */
+footer.sticky-footer {
+    padding: 1.5rem 3rem;
+    flex-shrink: 0;
+}
+
+span.footer-copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #504ee0;
+}

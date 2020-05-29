@@ -495,20 +495,3 @@ span.next {
 #contact-btn.focus {
     box-shadow: 0 0 0 0.2rem rgba(249, 250, 255, 0.5);
 }
-
-/* Footer */
-footer.sticky-footer {
-    padding: 1.5rem 3rem;
-    flex-shrink: 0;
-}
-
-span.footer-copyright {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-
-    color: #504ee0;
-}

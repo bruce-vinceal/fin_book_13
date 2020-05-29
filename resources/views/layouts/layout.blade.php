@@ -7,6 +7,7 @@
         <title>Laravel</title>
 
         <!-- Styles -->
+        <link href="/css/footer.css" rel="stylesheet">
         <link href="/css/index.css" rel="stylesheet">
         <link href="/css/navbar.css" rel="stylesheet">
         <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
