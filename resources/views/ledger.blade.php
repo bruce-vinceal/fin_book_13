@@ -63,52 +63,54 @@
     <div class="card">
         <div class="card-header"></div>
         <div class="card-body">
-            <table class="table" id="ledger-table">
-                <thead class="">
-                    <tr>
-                    <th class="column1" name="th-date" id="th-date">Date</th>
-                    <th class="column2" name="th-entry-description" id="th-entry-description">Description</th>
-                    <th class="column3" name="th-entry-category" id="th-entry-category">Category</th>
-                    <th class="column4" name="th-amount" id="th-amount">Amount</th>
-                    <th class="column5" name="th-delete" id="th-delete"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="column1" name="entry-date" id="entry-date">05/26/20</td>
-                        <td class="column2" name="entry-description" id="entry-description">Fair to School</td>
-                        <td class="column3" name="entry-category" id="entry-category">Transportation</td>
-                        <td class="column4" name="entry-amount" id="entry-amount">(20)</td>
-                        <td class="column5" name="entry-delete" id="entry-delete">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-sm btn-outline-danger" id="delete-entry-btn" data-toggle="modal" data-target="#deleteEntryModal">
-                            Delete
-                            </button>
+            <div class="table-responsive">
+                <table class="table" id="ledger-table">
+                    <thead class="">
+                        <tr>
+                        <th class="column1" name="th-date" id="th-date">Date</th>
+                        <th class="column2" name="th-entry-description" id="th-entry-description">Description</th>
+                        <th class="column3" name="th-entry-category" id="th-entry-category">Category</th>
+                        <th class="column4" name="th-amount" id="th-amount">Amount</th>
+                        <th class="column5" name="th-delete" id="th-delete"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="column1" name="entry-date" id="entry-date">05/26/20</td>
+                            <td class="column2" name="entry-description" id="entry-description">Fair to School</td>
+                            <td class="column3" name="entry-category" id="entry-category">Transportation</td>
+                            <td class="column4" name="entry-amount" id="entry-amount">(20)</td>
+                            <td class="column5" name="entry-delete" id="entry-delete">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-sm btn-outline-danger" id="delete-entry-btn" data-toggle="modal" data-target="#deleteEntryModal">
+                                Delete
+                                </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="deleteEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">Delete Entry</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
-                                    </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="deleteEntryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Delete Entry</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Are you sure to delete this entry?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </div>
+                                    </div>
                                 </div>
-                                <div class="modal-body">
-                                    Are you sure to delete this entry?
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-danger">Delete</button>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
