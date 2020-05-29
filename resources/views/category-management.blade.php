@@ -3,54 +3,53 @@
 @section('content')
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
-    <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Category Management</h1>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" id="create-category-btn" data-toggle="modal" data-target="#CreateCategoryModal"><i class="fas fa-plus fa-sm text-white-50"></i> Create Category
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="CreateCategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="create-category-title">Create Category</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
-                        </button>
-                    </div>
-                    <form action="/finote/category/ {{ $user->id }}" method="POST">
-                    @csrf
-                        <div class="modal-body">
-                                <div class="form-group row">
-                                    <label for="inputDescription" class="col-sm-3 col-form-label">Description</label>
-                                    <div class="col-sm-9">
-                                        <input type="description" class="form-control" name="category" id="inputDescription" placeholder="i.e Transportation" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="selectType" class="col-sm-3 col-form-label">Type</label>
-                                    <div class="col-sm-9">
-                                        <select class="form-control" name="type" id="selectType">
-                                            <option value="Expense">Expense</option>
-                                            <option value="Income">Income</option>
-                                        </select>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" id="close-btn" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary" id="create-btn">Create</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="card">
         <div class="card-header">
+                    <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <h1 class="h3 mb-0 text-gray-800">Category Management</h1>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" id="create-category-btn" data-toggle="modal" data-target="#CreateCategoryModal"><i class="fas fa-plus fa-sm text-white-50"></i> Create Category
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="CreateCategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="create-category-title">Create Category</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
+                                </button>
+                            </div>
+                            <form action="/finote/category/ {{ $user->id }}" method="POST">
+                            @csrf
+                                <div class="modal-body">
+                                        <div class="form-group row">
+                                            <label for="inputDescription" class="col-sm-3 col-form-label">Description</label>
+                                            <div class="col-sm-9">
+                                                <input type="description" class="form-control" name="category" id="inputDescription" placeholder="i.e Transportation" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="selectType" class="col-sm-3 col-form-label">Type</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" name="type" id="selectType">
+                                                    <option value="Expense">Expense</option>
+                                                    <option value="Income">Income</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-secondary" id="close-btn" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" id="create-btn">Create</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
