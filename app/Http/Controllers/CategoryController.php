@@ -9,7 +9,23 @@ use Session;
 class CategoryController extends Controller
 {
     public function show(){
-      $user = UserProfile::findOrFail(session::get('id'));
+      // $user = UserProfile::findOrFail(session::get('id'));
+
+// TEMPORARY      
+      $user = new UserProfile();
+
+      $user->id = 10;
+      $user->email = 'vincent@yahoo.com';
+      $user->password = '123';
+      $user->firstname = 'vincent';
+      $user->lastname = 'alturas';
+      $user->birthday = 'secret';
+      $user->sex = 'Male';
+      $user->categories = [
+        'Transportation' => 'Expense',
+        'Work' => 'Income'
+      ];
+//END OF TEMPORARY
       
       return view('category-management', [
         'user' => $user,
@@ -17,7 +33,6 @@ class CategoryController extends Controller
     }
 
     public function store($id){
-      return "YY";
       $user = UserProfile::find($id);
       $data = [
         request('category') => request('type')

@@ -104,7 +104,7 @@
                                       
                                       <div class="modal-footer">
                                           <a href="/finote/category/{{$user->id}}/{{$category}}" class="btn btn-outline-danger">Delete</a>
-                                          <button type="submit" class="btn btn-primary" id="update-btn" onclick="@method('PATCH')">Update</button>
+                                          <button type="submit" class="btn btn-primary" id="update-btn">Update</button>
                                       </div>
                                     </form>
                                 </div>
