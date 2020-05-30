@@ -51,7 +51,7 @@ class LedgerController extends Controller
     }
 
     public function destroy($id, $noteId){
-      Ledger::destroy(request('noteId'));
+      Ledger::destroy($noteId);
 
       return redirect('/finote/ledger')->with(['id' => $id]);
     }
