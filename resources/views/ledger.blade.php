@@ -22,34 +22,37 @@
                                 <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
                                 </button>
                             </div>
-                            <form>
+                            <form action="/finote/ledger/{{$user->id}}" method="POST">
+                            @csrf
                                 <div class="modal-body">
                                         <div class="form-group row">
                                             <label for="selectCategory" class="col-sm-3 col-form-label">Category</label>
                                             <div class="col-sm-9">
-                                                <select class="form-control" name="selectCategory" id="selectCategory">
-                                                    <option value="none" selected disabled hidden>Select Category</option>
-                                                    <option value="Transportation">Transportation</option>
-                                                    <option value="Allowance">Allowance</option>
+                                                <select class="form-control" name="category" id="selectCategory" required>
+                                                  @if($user->categories != 'none')
+                                                    @foreach(array_keys($user->categories) as $category)
+                                                      <option value=" {{ $category }} "> {{ $category }} </option>
+                                                    @endforeach
+                                                  @endif
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="inputEntryDescription" class="col-sm-3 col-form-label">Description</label>
                                             <div class="col-sm-9">
-                                                <input type="description" class="form-control" name="inputEntryDescription" id="inputEntryDescription" placeholder="i.e Transportation">
+                                                <input type="description" class="form-control" name="description" id="inputEntryDescription" placeholder="i.e Transportation" required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="inputAmount" class="col-sm-3 col-form-label">Amount</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="inputAmount" id="inputAmount" placeholder="000">
+                                                <input type="number" class="form-control" name="amount" id="inputAmount" min="1" placeholder="0" required>
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="inputDate" class="col-sm-3 col-form-label">Date</label>
                                             <div class="col-sm-9">
-                                                <input type="date" class="form-control" name="inputDate" id="inputDate">
+                                                <input type="date" name="date" value="{{Carbon\Carbon::now()->format('Y-m-d')}}" class="form-control" name="inputDate" id="inputDate">
                                             </div>
                                         </div>
                                 </div>
@@ -75,11 +78,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                      @foreach($ledger as $note)
                         <tr>
-                            <td class="column1" name="entry-date" id="entry-date">05/26/20</td>
-                            <td class="column2" name="entry-description" id="entry-description">Fair to School</td>
-                            <td class="column3" name="entry-category" id="entry-category">Transportation</td>
-                            <td class="column4" name="entry-amount" id="entry-amount">(20)</td>
+                            <td class="column1" name="entry-date" id="entry-date"> {{ $note->created_at->format('m/d/Y') }} </td>
+                            <td class="column2" name="entry-description" id="entry-description"> {{ $note->description }} </td>
+                            <td class="column3" name="entry-category" id="entry-category"> {{ $note->category }} </td>
+                            <td class="column4" name="entry-amount" id="entry-amount">
+                              @if($user->categories[$note->category] == 'Expense')
+                                ({{ $note->amount }})
+                              @else
+                                {{ $note->amount }}
+                              @endif
+                            </td>
                             <td class="column5" name="entry-delete" id="entry-delete">
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-sm btn-outline-danger" id="delete-entry-btn" data-toggle="modal" data-target="#deleteEntryModal">
@@ -101,13 +111,14 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <a href="/finote/ledger/{{$user->id}}/{{$note->id}}" class="btn btn-danger">Delete</a>
                                     </div>
                                     </div>
                                 </div>
                                 </div>
                             </td>
                         </tr>
+                      @endforeach
                     </tbody>
                 </table>
             </div>

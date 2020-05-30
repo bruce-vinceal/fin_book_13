@@ -62,6 +62,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @if($user->categories != 'none')
                     @foreach($user->categories as $category => $type)
                         <tr>
                             <td class="column1" name="category-desciption" id="category-description"> {{ $category }} </td>
@@ -88,7 +89,7 @@
                                                     <div class="form-group row">
                                                         <label for="editDescription" class="col-sm-3 col-form-label">Description</label>
                                                         <div class="col-sm-9">
-                                                            <input type="description" class="form-control" name="editCategory" id="editDescription" placeholder="{{ $category }}">
+                                                            <input type="description" value="{{$category}}" class="form-control" name="editCategory" id="editDescription" placeholder="{{ $category }}" required>
                                                         </div>
                                                     </div>
                                                     <div class="form-group row">
@@ -113,6 +114,7 @@
                             </td>
                         </tr>
                     @endforeach
+                    @endif
                     </tbody>
                 </table>
             </div>

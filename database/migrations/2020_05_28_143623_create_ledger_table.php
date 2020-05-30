@@ -18,7 +18,7 @@ class CreateLedgerTable extends Migration
             $table->timestamps();
             $table->string('category');
             $table->string('description');
-            $table->string('amount');
+            $table->integer('amount');
             $table->string('userid');
         });
     }

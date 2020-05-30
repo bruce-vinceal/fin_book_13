@@ -4,28 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\UserProfile;
+use App\Ledger;
 use Session;
 
 class CategoryController extends Controller
 {
     public function show(){
-      // $user = UserProfile::findOrFail(session::get('id'));
+      $user = UserProfile::findOrFail(session::get('id'));
 
-// TEMPORARY      
-      $user = new UserProfile();
+// // TEMPORARY      
+//       $user = new UserProfile();
 
-      $user->id = 10;
-      $user->email = 'vincent@yahoo.com';
-      $user->password = '123';
-      $user->firstname = 'vincent';
-      $user->lastname = 'alturas';
-      $user->birthday = 'secret';
-      $user->sex = 'Male';
-      $user->categories = [
-        'Transportation' => 'Expense',
-        'Work' => 'Income'
-      ];
-//END OF TEMPORARY
+//       $user->id = 10;
+//       $user->email = 'vincent@yahoo.com';
+//       $user->password = '123';
+//       $user->firstname = 'vincent';
+//       $user->lastname = 'alturas';
+//       $user->birthday = 'secret';
+//       $user->sex = 'Male';
+//       $user->categories = [
+//         'Transportation' => 'Expense',
+//         'Work' => 'Income'
+//       ];
+// //END OF TEMPORARY
       
       return view('category-management', [
         'user' => $user,
@@ -54,14 +55,17 @@ class CategoryController extends Controller
 
     public function destroy($id, $category){
       $user = UserProfile::find($id);
+      $ledger = Ledger::all()->where('category', $category);
+      
+      if($ledger->isEmpty()){
+        $data = $user->categories;
+        unset($data[$category]);
+      
+        $user->update([
+          'categories' => $data,
+        ]);
+      }
 
-      $data = $user->categories;
-      unset($data[$category]);
-      
-      $user->update([
-        'categories' => $data,
-      ]);
-      
       return redirect('/finote/category')->with(['id' => $id]);
     }
 

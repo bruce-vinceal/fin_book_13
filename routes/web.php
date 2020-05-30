@@ -28,6 +28,8 @@ Route::get('/finote/category/{id}/{category}', 'CategoryController@destroy');
 Route::get('/finote/category/{id}', 'GeneralController@categoryManagement');
 
 Route::get('finote/ledger', 'LedgerController@show');
+Route::post('finote/ledger/{id}', 'LedgerController@store');
+Route::get('finote/ledger/{id}/{noteId}', 'LedgerController@destroy');
 Route::get('/finote/ledger/{id}', 'GeneralController@ledger');
 
 Route::get('/finote/monthly-report', 'ReportController@show');
