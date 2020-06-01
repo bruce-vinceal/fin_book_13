@@ -80,11 +80,11 @@
                     <tbody>
                       @foreach($ledger as $note)
                         <tr>
-                            <td class="column1" name="entry-date" id="entry-date"> {{ $note->created_at->format('m/d/Y') }} </td>
+                            <td class="column1" name="entry-date" id="entry-date"> {{ $note->date }} </td>
                             <td class="column2" name="entry-description" id="entry-description"> {{ $note->description }} </td>
                             <td class="column3" name="entry-category" id="entry-category"> {{ $note->category }} </td>
                             <td class="column4" name="entry-amount" id="entry-amount">
-                              @if($user->categories[$note->category] == 'Expense')
+                              @if($note->type == 'Expense')
                                 ({{ $note->amount }})
                               @else
                                 {{ $note->amount }}

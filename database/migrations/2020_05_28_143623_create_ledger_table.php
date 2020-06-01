@@ -16,7 +16,9 @@ class CreateLedgerTable extends Migration
         Schema::create('ledger', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('date');
             $table->string('category');
+            $table->string('type');
             $table->string('description');
             $table->integer('amount');
             $table->string('userid');

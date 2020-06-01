@@ -33,4 +33,5 @@ Route::get('finote/ledger/{id}/{noteId}', 'LedgerController@destroy');
 Route::get('/finote/ledger/{id}', 'GeneralController@ledger');
 
 Route::get('/finote/monthly-report', 'ReportController@show');
+Route::post('/finote/monthly-report/{id}', 'ReportController@generate');
 Route::get('/finote/monthly-report/{id}', 'GeneralController@monthlyReport');

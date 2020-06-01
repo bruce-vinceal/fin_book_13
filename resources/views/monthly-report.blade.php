@@ -21,25 +21,26 @@
                         <span aria-hidden="true" style="font-size: 18px;"><i class="fas fa-times"></i></span>
                         </button>
                     </div>
-                    <form>
+                    <form action="/finote/monthly-report/{{$user->id}}" method="POST">
+                    @csrf
                         <div class="modal-body">
                                 <div class="form-group row">
                                     <label for="selectMonth" class="col-sm-3 col-form-label">Month</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control" name="selectMonth" id="selectMonth">
+                                        <select class="form-control" name="month" id="selectMonth">
                                             <option value="none" selected disabled hidden>Select Month</option>
-                                            <option value="January">January</option>
-                                            <option value="February">February</option>
-                                            <option value="March">March</option>
-                                            <option value="April">April</option>
-                                            <option value="May">May</option>
-                                            <option value="June">June</option>
-                                            <option value="July">July</option>
-                                            <option value="August">August</option>
-                                            <option value="September">September</option>
-                                            <option value="October">October</option>
-                                            <option value="November">November</option>
-                                            <option value="December">December</option>
+                                            <option value="01">January</option>
+                                            <option value="02">February</option>
+                                            <option value="03">March</option>
+                                            <option value="04">April</option>
+                                            <option value="05">May</option>
+                                            <option value="06">June</option>
+                                            <option value="07">July</option>
+                                            <option value="08">August</option>
+                                            <option value="09">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
                                         </select>
                                     </div>
                                 </div>
@@ -53,6 +54,7 @@
             </div>
         </div>
     </div>
+    @if($show == '1')
     <div class="row">
         <div class="col-md-7">
             <div class="card">
@@ -89,6 +91,7 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
 <!-- /.container-fluid -->
 @endsection

@@ -37,6 +37,14 @@
         <script src="/js/Chart.bundle.js"></script>
         <script>
             $(document).ready(function () {
+
+              var dailyExpense = <?php echo json_encode($dailyExpense ?? ''); ?>;
+              var days = <?php echo json_encode($days ?? ''); ?>;
+              var monthlyIncome = <?php echo json_encode($monthlyIncome ?? ''); ?>;
+              var monthlyExpense = <?php echo json_encode($monthlyExpense ?? ''); ?>;
+              var category = <?php echo json_encode($category ?? ''); ?>;
+              var expenseCategory = <?php echo json_encode($expenseCategory ?? ''); ?>;
+
                 $("#sidebarToggle, #sidebarToggleTop").on("click", function (e) {
                     $("body").toggleClass("sidebar-toggled");
                     $(".sidebar").toggleClass("toggled");
@@ -75,12 +83,12 @@
 
                     // The data for our dataset
                     data: {
-                        labels: ['15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'],
+                        labels: days,
                         datasets: [{
                             label: "Expense",
                             backgroundColor: 'transparent',
                             borderColor: 'rgb(255, 99, 132)',
-                            data: [75,100,105,103,100,80,150,85,75,95,110,120,115,110,120,95,150]
+                            data: dailyExpense
                         }]
                     },
 
@@ -96,9 +104,9 @@
                     var myPieChart = new Chart(ctx, {
                         type: 'pie',
                         data: {
-                            labels: ["Direct", "Referral", "Social"],
+                            labels: category,
                             datasets: [{
-                            data: [55, 30, 15],
+                            data: expenseCategory,
                             backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
                             hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
                             hoverBorderColor: "rgba(234, 236, 244, 1)",
@@ -115,13 +123,15 @@
                     var myBarChart = new Chart(ctx, {
                         type: 'bar',
                         data: {
-                            labels: ["January", "February", "March", "April", "May", "June"],
+                            labels: [
+                              "January", "February", "March", "April", "May", "June","July","August","September","November","December"
+                            ],
                             datasets: [{
                             label: "Revenue",
                             backgroundColor: "#4e73df",
                             hoverBackgroundColor: "#2e59d9",
                             borderColor: "#4e73df",
-                            data: [4215, 5312, 6251, 7841, 9821, 14984],
+                            data: monthlyIncome,
                             }],
                         },
                         options: {
@@ -135,13 +145,15 @@
                     var myBarChart = new Chart(ctx, {
                         type: 'bar',
                         data: {
-                            labels: ["January", "February", "March", "April", "May", "June"],
+                            labels: [
+                              "January", "February", "March", "April", "May", "June","July","August","September","November","December"
+                            ],
                             datasets: [{
                             label: "Revenue",
                             backgroundColor: "#4e73df",
                             hoverBackgroundColor: "#2e59d9",
                             borderColor: "#4e73df",
-                            data: [4215, 5312, 6251, 7841, 9821, 14984],
+                            data: monthlyExpense,
                             }],
                         },
                         options: {

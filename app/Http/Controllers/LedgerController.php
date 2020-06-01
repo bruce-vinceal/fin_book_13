@@ -28,6 +28,7 @@ class LedgerController extends Controller
 //           'Work' => 'Income'
 //         ];
 // //END OF TEMPORARY
+
       return view('ledger', [
         'user' => $user,
         'ledger' => $ledger
@@ -38,14 +39,16 @@ class LedgerController extends Controller
       $user = UserProfile::find($id);
       $ledger = new Ledger();
 
+      $type = $user->categories;
+
       $ledger->category = request('category');
       $ledger->description = request('description');
       $ledger->amount = request('amount');
+      $ledger->date = request('date');
+      $ledger->type = $type[request('category')];
       $ledger->userid = $user->id;
 
       $ledger->save();
-
-      $notebook = Ledger::all()->where('userid', $id);
 
       return redirect('/finote/ledger')->with(['id' => $id]);
     }
