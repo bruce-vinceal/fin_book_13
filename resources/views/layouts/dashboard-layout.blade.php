@@ -44,15 +44,7 @@
               var monthlyExpense = <?php echo json_encode($monthlyExpense ?? ''); ?>;
               var category = <?php echo json_encode($category ?? ''); ?>;
               var expenseCategory = <?php echo json_encode($expenseCategory ?? ''); ?>;
-
-              // //for Temp Acc
-              //   var dailyExpense = [3,325,0,0,0,450,600,90,6,7,11,0,13,14,0,16,17,0,19,20,0,0,23,24,76,26,27,92,5,30];
-              //   var days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
-              //   var monthlyIncome = [250,300,10000,800,0,0,500,800,0,750,1000,1350];
-              //   var monthlyExpense = [100,200,400,160,0,0,500,800,0,750,0,120];
-              //   var category = ['Transportation', 'Work', 'Food'];
-              //   var expenseCategory = [4,15,18];
-              // //End for Temp Acc
+      
 
                 $("#sidebarToggle, #sidebarToggleTop").on("click", function (e) {
                     $("body").toggleClass("sidebar-toggled");
