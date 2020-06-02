@@ -57,34 +57,34 @@
     @if($show == '1')
     <div class="row">
         <div class="col-md-7">
-            <div class="card">
-                <div class="card-header">Daily Expense</div>
+            <div class="card shadow mb-4">
+                <div class="card-header pad">Daily Expense</div>
                 <div class="card-body">
                     <canvas name="daily-expense-line-graph" id="daily-expense-line-graph"></canvas>
                 </div>
             </div>
         </div>
         <div class="col-md-5">
-            <div class="card">
-                <div class="card-header">Expense Category</div>
+            <div class="card shadow mb-4">
+                <div class="card-header pad">Expense Category</div>
                 <div class="card-body">
-                    <canvas name="expense-category-pie-chart" id="expense-category-pie-chart"></canvas>
+                    <canvas name="expense-category-pie-chart" id="expense-category-pie-chart" height="222"></canvas>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">Monthly Income</div>
+            <div class="card shadow mb-4">
+                <div class="card-header pad">Monthly Income</div>
                 <div class="card-body">
                     <canvas name="monthly-income-bar-graph" id="monthly-income-bar-graph"></canvas>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="card">
-                <div class="card-header">Monthly Expense</div>
+            <div class="card shadow mb-4">
+                <div class="card-header pad">Monthly Expense</div>
                 <div class="card-body">
                     <canvas name="monthly-expense-bar-graph" id="monthly-expense-bar-graph"></canvas>
                 </div>

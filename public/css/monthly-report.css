@@ -59,3 +59,7 @@ button#generate-btn:focus,
 button#generate-btn.focus {
     box-shadow: 0 0 0 0.2rem rgba(105, 136, 228, 0.5) !important;
 }
+
+.pad {
+    padding: 0.75rem 1.25rem !important;
+}
