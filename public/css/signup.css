@@ -68,3 +68,9 @@ button#register-btn.focus {
 
     color: #9291cd;
 }
+.form-signup a {
+    color: #9291cd !important;
+}
+.form-signup a:hover {
+    color: #343383 !important;
+}

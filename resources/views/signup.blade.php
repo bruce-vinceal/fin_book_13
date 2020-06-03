@@ -59,8 +59,9 @@
               <span style="color:red"> {{ $message }} </span>
             @enderror
         </div>
-        <p>By signing up, you agree to the Terms of Service and Privacy Policy.</p>
+        <p class="text-center">By signing up, you agree to the Terms of Service <br>and Privacy Policy.</p>
         <button class="btn btn-lg btn-primary btn-block my-3" id="register-btn" type="submit">Sign up</button>
+        <p class="text-center">Already a member? <a href="/login">Sign in here.</a></p>
     </form>
 </div>
 </section>
