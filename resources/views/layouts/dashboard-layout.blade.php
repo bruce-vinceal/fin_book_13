@@ -87,8 +87,8 @@
                         labels: days,
                         datasets: [{
                             label: "Expense",
-                            backgroundColor: 'transparent',
-                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(80, 78, 224, 0.1)',
+                            borderColor: 'rgba(80, 78, 224)',
                             data: dailyExpense
                         }]
                     },
@@ -107,16 +107,32 @@
                         data: {
                             labels: category,
                             datasets: [{
-                            data: expenseCategory,
-                            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-                            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
-                            hoverBorderColor: "rgba(234, 236, 244, 1)",
+                                data: expenseCategory,
+                                backgroundColor: [
+                                    'rgba(154, 136, 255, 0.8)',
+                                    'rgba(118, 106, 255, 0.8)',
+                                    'rgba(80, 78, 224, 0.8)',
+                                    'rgba(0, 35, 170, 0.8)',
+                                    'rgba(0, 113, 249, 0.8)',
+                                    'rgba(0, 135, 245, 0.8)',
+                                    'rgba(0, 149, 216, 0.8)',
+                                    'rgba(0, 159, 173, 0.8)',
+                                    'rgba(0, 166, 125, 0.8)',
+                                ],
+                                hoverBackgroundColor: [
+                                    'rgba(154, 136, 255)',
+                                    'rgba(118, 106, 255)',
+                                    'rgba(80, 78, 224)',
+                                    'rgba(0, 35, 170)',
+                                    'rgba(0, 113, 249)',
+                                    'rgba(0, 135, 245)',
+                                    'rgba(0, 149, 216)',
+                                    'rgba(0, 159, 173)',
+                                    'rgba(0, 166, 125)',
+                                ],
                             }],
                         },
                         options: {
-                            legend: {
-                                display: false
-                            },
                         },
                     });
 
@@ -129,15 +145,15 @@
                             ],
                             datasets: [{
                             label: "Revenue",
-                            backgroundColor: "#4e73df",
-                            hoverBackgroundColor: "#2e59d9",
-                            borderColor: "#4e73df",
+                            backgroundColor: 'rgba(80, 78, 224)',
+                            hoverBackgroundColor: 'rgba(52, 51, 131)',
+                            borderColor: 'rgba(80, 78, 224)',
                             data: monthlyIncome,
                             }],
                         },
                         options: {
                             legend: {
-                                display: false
+                                display: false,
                             },
                         }
                     });
@@ -151,9 +167,9 @@
                             ],
                             datasets: [{
                             label: "Revenue",
-                            backgroundColor: "#4e73df",
-                            hoverBackgroundColor: "#2e59d9",
-                            borderColor: "#4e73df",
+                            backgroundColor: 'rgba(80, 78, 224)',
+                            hoverBackgroundColor: 'rgba(52, 51, 131)',
+                            borderColor: 'rgba(80, 78, 224)',
                             data: monthlyExpense,
                             }],
                         },
