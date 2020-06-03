@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-7 align-self-center text">
                 <h1>Manage your financials <br>in just a click!</h1>
-                <p>Automate your income and expenses today.</p>
+                <p>Automate your income and expenses today!</p>
                 <a class="btn btn-outline-success" id="signup-btn" href="signup" role="button">become a member</a>
             </div>
             <div class="col-lg-5 align-self-center img"><img class="laptop" src="/img/asset.png" alt="laptop"></div>
