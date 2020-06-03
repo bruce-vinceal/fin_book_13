@@ -13,7 +13,7 @@
       <label for="loginPwd" class="sr-only">Password</label>
       <input type="password" name="password" id="loginPwd" class="form-control" placeholder="Password" required="">
       <button class="btn btn-lg btn-primary btn-block my-3" id="login-btn" type="submit">Log in</button>
-      <p class="my-3">Not a Member? <a href="signup">Sign up for Finote.</a></p>
+      <p class="my-3">Not a Member? <a href="/signup">Sign up for Finote.</a></p>
     </form>
     </div>
 </section>
