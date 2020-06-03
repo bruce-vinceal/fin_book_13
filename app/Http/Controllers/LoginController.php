@@ -21,7 +21,7 @@ class LoginController extends Controller
       return redirect('/finote/monthly-report')->with(['id' => $user->id]);
     }
     else{
-      return redirect('/login');
+      return redirect('/login')->with('response', 'Incorrect Email or Password');
     }
   }
 }

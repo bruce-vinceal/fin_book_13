@@ -5,6 +5,7 @@
   <div class="login-container">
     <img class="mb-4" src="/img/logo.png" alt="" width="30%">
     <h1 class="mb-3">Login to Finote</h1>
+    <p style="color:red"> {{ session('response') }} </p>
     <form class="form-login" action="/login" method="POST">
     @csrf
       <label for="loginEmail" class="sr-only">Email address</label>

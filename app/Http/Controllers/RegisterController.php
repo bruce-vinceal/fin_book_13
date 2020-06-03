@@ -12,33 +12,28 @@ class RegisterController extends Controller
   }
 
   public function store() {
-    $users = UserProfile::all();
-    $max = count($users);
-    $val = false;
 
-    for ($i=0; $i < $max && $val == false; $i++) { 
-      if($users[$i]->email == request('email')){
-        $val = true;
-      }
-    }
+    request()->validate([
+      'firstname' => 'required|min:2',
+      'lastname' => 'required|min:2',
+      'birthday' => 'required',
+      'sex' => 'required',
+      'email' => 'required|unique:App\UserProfile,email',
+      'password' => 'required',
+    ]);
 
-    if($val == false){
-      $acc = new UserProfile();
+    $acc = new UserProfile();
 
-      $acc->email = request('email');
-      $acc->password = request('password');
-      $acc->firstname = request('fname');
-      $acc->lastname = request('lname');
-      $acc->birthday = request('birthday');
-      $acc->sex = request('sex');
-      $acc->categories = 'none';
+    $acc->email = request('email');
+    $acc->password = request('password');
+    $acc->firstname = request('firstname');
+    $acc->lastname = request('lastname');
+    $acc->birthday = request('birthday');
+    $acc->sex = request('sex');
+    $acc->categories = 'none';
 
-      $acc->save();
+    $acc->save();
 
-      return redirect('/login');
-    }
-    else{
-      return redirect('/finote');
-    }
+    return redirect('/login');
   }
 }
