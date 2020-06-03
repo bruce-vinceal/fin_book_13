@@ -61,34 +61,6 @@ class ReportController extends Controller
       $category = array_keys($expenseCategory);
       $expenseCategory = array_values($expenseCategory);
 
-
-// // TEMPORARY      
-//       $user = new UserProfile();
-
-//       $user->id = 10;
-//       $user->email = 'vincent@yahoo.com';
-//       $user->password = '123';
-//       $user->firstname = 'vincent';
-//       $user->lastname = 'alturas';
-//       $user->birthday = 'secret';
-//       $user->sex = 'Male';
-//       $user->categories = [
-//         'Transportation' => 'Expense',
-//         'Work' => 'Income'
-//       ];
-
-// //for Temp Acc
-//                 $dailyExpense = [3,325,0,0,0,450,600,90,6,7,11,0,13,14,0,16,17,0,19,20,0,0,23,24,76,26,27,92,5,30];
-//                 $days = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
-//                 $monthlyIncome = [250,300,10000,800,0,0,500,800,0,750,1000,1350];
-//                 $monthlyExpense = [100,200,400,160,0,0,500,800,0,750,0,120];
-//                 $category = ['Transportation', 'Work', 'Food'];
-//                 $expenseCategory = [4,15,18];
-// //End for Temp Acc
-
-// //END OF TEMPORARY
-
-   
       return view('monthly-report', [
         'user' => $user,
         'show' => $show,

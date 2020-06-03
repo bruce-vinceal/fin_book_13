@@ -12,22 +12,6 @@ class CategoryController extends Controller
     public function show(){
       $user = UserProfile::findOrFail(session::get('id'));
 
-// // TEMPORARY      
-//       $user = new UserProfile();
-
-//       $user->id = 10;
-//       $user->email = 'vincent@yahoo.com';
-//       $user->password = '123';
-//       $user->firstname = 'vincent';
-//       $user->lastname = 'alturas';
-//       $user->birthday = 'secret';
-//       $user->sex = 'Male';
-//       $user->categories = [
-//         'Transportation' => 'Expense',
-//         'Work' => 'Income'
-//       ];
-// //END OF TEMPORARY
-      
       return view('category-management', [
         'user' => $user,
       ]);
@@ -77,7 +61,6 @@ class CategoryController extends Controller
       ];
 
       $temp2 = $user->categories;
-
       $data2 = array_slice($temp2, array_search($category, array_keys($temp2))+1, count($temp2), true);
       $data = array_slice($temp2, 0, array_search($category, array_keys($temp2)), true);
 
@@ -86,6 +69,5 @@ class CategoryController extends Controller
       ]);
 
       return redirect('/finote/category')->with(['id' => $id]);
-
     }
 }
