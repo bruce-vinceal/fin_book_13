@@ -184,7 +184,7 @@
                         <form id="contact-form">
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Email Address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="finote@yahoo.com" disabled>
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Your Ideas</label>
