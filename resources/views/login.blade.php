@@ -3,7 +3,7 @@
 @section('content')
 <section class="login-sec text-center">
   <div class="login-container">
-    <a href="/finote"><img class="mb-4" src="/img/logo.png" alt="" width="30%"></a>
+    <a href="/"><img class="mb-4" src="/img/logo.png" alt="" width="30%"></a>
     <h1 class="mb-3">Login to Finote</h1>
     <p style="color:red"> {{ session('response') }} </p>
     <form class="form-login" action="/login" method="POST">

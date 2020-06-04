@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/finote', 'GeneralController@index');
+Route::get('/', 'GeneralController@index');
 
 Route::get('/login', 'LoginController@show');
 Route::post('/login', 'LoginController@authenticate');
