@@ -62,6 +62,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <p style="color:red">{{ $mssg ?? ''}}</p>
                     @if($user->categories != 'none')
                     @foreach($user->categories as $category => $type)
                         <tr>

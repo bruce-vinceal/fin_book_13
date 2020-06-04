@@ -53,13 +53,20 @@ class ReportController extends Controller
       $monthlyExpense = array_values($monthlyExpense);
 
       //Expense Category
+      
       $expenseCategory = $user->category;
-      foreach($user->categories as $category => $type){
-        $ledger = Ledger::where('userid', session::get('id'))->where('category', $category);
-        $expenseCategory[$category] = $ledger->where('type', 'Expense')->count();
-      }
+      if($expenseCategory != null){
+        foreach($user->categories as $category => $type){
+          $ledger = Ledger::where('userid', session::get('id'))->where('category', $category);
+          $expenseCategory[$category] = $ledger->where('type', 'Expense')->count();
+        }
       $category = array_keys($expenseCategory);
       $expenseCategory = array_values($expenseCategory);
+      }
+      else{
+        $category = "";
+        $expenseCategory = "";
+      }
 
       return view('monthly-report', [
         'user' => $user,
